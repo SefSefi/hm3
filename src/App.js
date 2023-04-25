@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import axios from 'axios';
+import "./App.css";
 
-function App() {
+export default function App(){
+  const [name, setName] = useState(""); 
+  const [weather, setweather] = useState(null); 
+  const apiKey = 'bce529d51e65c325a427436fbeeb3596';
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${name}&units=metric&appid=${apiKey}`
+  
+    
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    axios.get(url).then((res) => {setweather(res.data)});
+    console.log(name); 
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <form onSubmit={handleSubmit} className = "allPage">
+      <div className="searchLine">
+        <input value={name} onChange={(e) => setName(e.target.value)} type="search" className="search" />
+        <input type="submit" value="Search" />
+      </div>
+      {weather && 
+      <>
+        <p>{weather.name.toUpperCase()}, {weather.sys.country}</p>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          {weather.main.temp}&deg;<br/>
+          {weather.weather[0].main.toUpperCase()}<br/>
+          feels like {weather.main.feels_like}&deg;
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      </>
+      }
+      
+    </form>
   );
 }
-
-export default App;
