@@ -5,7 +5,7 @@ import "./App.css";
 export default function App(){
   const [name, setName] = useState(""); 
   const [weather, setweather] = useState(null); 
-  const apiKey = 'bce529d51e65c325a427436fbeeb3596';
+  const apiKey = 'hidden';
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${name}&units=metric&appid=${apiKey}`
   
     
