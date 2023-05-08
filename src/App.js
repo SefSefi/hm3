@@ -55,7 +55,7 @@ class App extends Component {
       name: "",
       weather: null,
     };
-    this.apiKey = "bce529d51e65c325a427436fbeeb3596";
+    this.apiKey = "secret";
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
