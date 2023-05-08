@@ -1,0 +1,29 @@
+[33mcommit c3d54dec40cca2d566610485e74c77f5bfacc89e[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Sef <serafima.alperovich@gmail.com>
+Date:   Mon May 8 19:35:04 2023 +0300
+
+    removed api key
+
+[33mcommit e6c9ca5be6f7ac72eb8225802523132de2debc9e[m
+Author: Sef <serafima.alperovich@gmail.com>
+Date:   Mon May 8 19:31:50 2023 +0300
+
+    changed functional component to class component
+
+[33mcommit ae57b665cf6d51463d10c2f4f91d435a85d363da[m
+Author: SefSefi <130898232+SefSefi@users.noreply.github.com>
+Date:   Tue Apr 25 15:19:09 2023 +0300
+
+    Update App.js
+
+[33mcommit 7e562030c88d2a1cda4348b55ab182536252739f[m
+Author: Sef <serafima.alperovich@gmail.com>
+Date:   Tue Apr 25 15:15:57 2023 +0300
+
+    final version
+
+[33mcommit f74c517e02adb73bbefe7e6acdcd79189f468815[m
+Author: Sef <serafima.alperovich@gmail.com>
+Date:   Wed Apr 19 22:47:37 2023 +0300
+
+    init
